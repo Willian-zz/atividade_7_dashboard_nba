@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" alt="nba logo" class="navbar-logo">
+        </nav>
+    </header>
+
+        <main>
+            <div class="container">
+                <div class="wrap">
+                    <h1 class="label">Corrida para MVP</h1>
+                    <div class="mvps">
+                        <div class="card">
+                            <video src="assets/vid/Jokic-highlight.mp4" class="player-highlight" muted></video>
+                            <img src="https://s2-ge.glbimg.com/7I1kC5zSdpgtvKUF4dSqV7JbMgw=/0x0:1080x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/n/w/1yutyhRkuTu43RSByA8w/jokic-1.jfif" alt="Nikola Jokic" class="player-img">
+                            <div class="player-info">
+                                <p class="player-name">N. Jokic</p>
+                                <div class="stats-wrap">
+                                    <div class="stats">
+                                        <p class="stats-label">PPG</p>
+                                        <p class="stats-info">26.4</p>
+                                    </div>
+                                    <div class="stats">
+                                        <p class="stats-label">APG</p>
+                                        <p class="stats-info">9.0</p>
+                                    </div>
+                                    <div class="stats">
+                                        <p class="stats-label">RPG</p>
+                                        <p class="stats-info">12.4</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <video src="assets/vid/SGA-highlight.mp4" class="player-highlight" muted></video>
+                            <img src="https://scontent.fcfc1-1.fna.fbcdn.net/v/t39.30808-6/504354094_1316722316484407_5177206746388599033_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=dd6889&_nc_ohc=U7Hzff64yGwQ7kNvwE_DHTu&_nc_oc=AdqvYw0GB5WmbbgM_3RwFygQxfyZEj-fUF3gvgWsuwCU69ZUtwI3_kUgXuNLj0vH2ls&_nc_zt=23&_nc_ht=scontent.fcfc1-1.fna&_nc_gid=MYLUb8aoTD8L6uA_m0Rp4g&_nc_ss=7b289&oh=00_Af6TerQcL5KRpAOnQfI9Hk7ot3MSw96gp6skIaoNn-DH2A&oe=6A03C17A" alt="Shai Gilgeous Alexander" class="player-img">
+                            <div class="player-info">
+                                <p class="player-name">S. Gilgeous-Alexander</p>
+                                <div class="stats-wrap">
+                                    <div class="stats">
+                                        <p class="stats-label">PPG</p>
+                                        <p class="stats-info">30.1</p>
+                                    </div>
+                                    <div class="stats">
+                                        <p class="stats-label">APG</p>
+                                        <p class="stats-info">6.2</p>
+                                    </div>
+                                    <div class="stats">
+                                        <p class="stats-label">RPG</p>
+                                        <p class="stats-info">5.5</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <video src="assets/vid/LBJ-highlight.mp4" class="player-highlight" muted></video>
+                            <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/lebron-james-lakers-timberwolves-nba-e1746124845134.jpg?w=1200&h=630&crop=1" alt="Shai Gilgeous Alexander" class="player-img">
+                            <div class="player-info">
+                                <p class="player-name">L. James</p>
+                                <div class="stats-wrap">
+                                    <div class="stats">
+                                        <p class="stats-label">PPG</p>
+                                        <p class="stats-info">32.2</p>
+                                    </div>
+                                    <div class="stats">
+                                        <p class="stats-label">APG</p>
+                                        <p class="stats-info">12.3</p>
+                                    </div>
+                                    <div class="stats">
+                                        <p class="stats-label">RPG</p>
+                                        <p class="stats-info">9.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="wrap small">
+                    <h1 class="label">Camisetas mais vendidas</h1>
+                    <canvas id="chart"></canvas>
+                </div>
+                <div class="wrap large">
+
+                </div>
+            </div>
+        </main>
+    
+        <script type="module" src="chart.js"></script>
+</body>
+</html>
