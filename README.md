@@ -1,4 +1,4 @@
-##Dashboard da NBA
+# Dashboard da NBA
 
 Esse é um dashboard para atividade, a ideia é fazer um dashboard simples com o nosso tema, decidimos fazer da NBA!
 
