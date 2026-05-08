@@ -67,7 +67,7 @@
 
                         <div class="card">
                             <video src="assets/vid/LBJ-highlight.mp4" class="player-highlight" muted></video>
-                            <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/lebron-james-lakers-timberwolves-nba-e1746124845134.jpg?w=1200&h=630&crop=1" alt="Shai Gilgeous Alexander" class="player-img">
+                            <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/lebron-james-lakers-timberwolves-nba-e1746124845134.jpg?w=1200&h=630&crop=1" alt="LeBron James" class="player-img">
                             <div class="player-info">
                                 <p class="player-name">L. James</p>
                                 <div class="stats-wrap">
@@ -93,10 +93,144 @@
             <div class="container">
                 <div class="wrap small">
                     <h1 class="label">Camisetas mais vendidas</h1>
-                    <canvas id="chart"></canvas>
+                    <div class="chart-container">
+                        <canvas id="chart"></canvas>
+                        <div id="chart-tooltip"></div>
+                    </div>
                 </div>
                 <div class="wrap large">
-
+                    <h1 class="label">Jogadores favoritos</h1>
+                    <div class="favorite-players">
+                        <div class="card">
+                                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/lebron-james-lakers-timberwolves-nba-e1746124845134.jpg?w=1200&h=630&crop=1" alt="LeBron James" class="player-img">
+                                <div class="last-game">
+                                    <img src="https://i.logocdn.com/nba/current/oklahoma-city-thunder.svg" alt="Oklahoma City Thunder" class="team" id="home-team">
+                                    <h1 class="score" id="home-score">125</h1>
+                                    <h1 class="against">X</h1>
+                                    <h1 class="score" id="visitor-score">107</h1>
+                                    <img src="https://i.logocdn.com/nba/2023/los-angeles-lakers.svg" alt="Los Angeles Lakers" class="team" id="visitor-team">
+                                </div>
+                                <div class="player-info vertical">
+                                    <p class="player-name">L. James</p>
+                                    <div class="stats-wrap vertical">
+                                        <div class="stats">
+                                            <p class="stats-label">MIN</p>
+                                            <p class="stats-info">38</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">FG%</p>
+                                            <p class="stats-info">9/18</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">PTS</p>
+                                            <p class="stats-info">23</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">AST</p>
+                                            <p class="stats-info">6</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">REB</p>
+                                            <p class="stats-info">2</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">STL</p>
+                                            <p class="stats-info">3</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">BLK</p>
+                                            <p class="stats-info">0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="card">
+                                <img src="https://www.vmcdn.ca/f/files/shared/feeds/cp/2024/04/20240409230436-66160948995574496b52f5c2jpeg.jpg;w=683" alt="Anthony Edwards" class="player-img">
+                                <div class="last-game">
+                                    <img src="https://i.logocdn.com/nba/2017/san-antonio-spurs.svg" alt="San Antonio Spurs" class="team" id="home-team">
+                                    <h1 class="score" id="home-score">133</h1>
+                                    <h1 class="against">X</h1>
+                                    <h1 class="score" id="visitor-score">95</h1>
+                                    <img src="https://i.logocdn.com/nba/2017/minnesota-timberwolves.svg" alt="Minnesota Timberwolves" class="team" id="visitor-team">
+                                </div>
+                                <div class="player-info vertical">
+                                    <p class="player-name">Ant. Edwards</p>
+                                    <div class="stats-wrap vertical">
+                                        <div class="stats">
+                                            <p class="stats-label">MIN</p>
+                                            <p class="stats-info">24</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">FG%</p>
+                                            <p class="stats-info">5/13</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">PTS</p>
+                                            <p class="stats-info">12</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">AST</p>
+                                            <p class="stats-info">9</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">REB</p>
+                                            <p class="stats-info">3</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">STL</p>
+                                            <p class="stats-info">0</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">BLK</p>
+                                            <p class="stats-info">0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="card">
+                                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/01/gui-santos-e1769543625671.jpg?w=1200&h=1200&crop=1" alt="Gui Santos" class="player-img">
+                                <div class="last-game">
+                                    <img src="https://i.logocdn.com/nba/2013/phoenix-suns.svg" alt="Phoenix Suns" class="team" id="home-team">
+                                    <h1 class="score" id="home-score">111</h1>
+                                    <h1 class="against">X</h1>
+                                    <h1 class="score" id="visitor-score">96</h1>
+                                    <img src="https://i.logocdn.com/nba/2019/golden-state-warriors.svg" alt="Golden State Warriors" class="team" id="visitor-team">
+                                </div>
+                                <div class="player-info vertical">
+                                    <p class="player-name">Gui Santos</p>
+                                    <div class="stats-wrap vertical">
+                                        <div class="stats">
+                                            <p class="stats-label">MIN</p>
+                                            <p class="stats-info">30</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">FG%</p>
+                                            <p class="stats-info">4/8</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">PTS</p>
+                                            <p class="stats-info">9</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">AST</p>
+                                            <p class="stats-info">4</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">REB</p>
+                                            <p class="stats-info">6</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">STL</p>
+                                            <p class="stats-info">1</p>
+                                        </div>
+                                        <div class="stats">
+                                            <p class="stats-label">BLK</p>
+                                            <p class="stats-info">0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
         </main>
