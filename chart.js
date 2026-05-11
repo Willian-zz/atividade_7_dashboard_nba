@@ -73,17 +73,17 @@ new Chart(ctx, {
   data: {
 
     labels: [
-      'Curry #30',
-      'James #23',
-      'Tatum #0'
+      'Curry #30', //1st jersey
+      'James #23', //2nd jersey
+      'Tatum #0' //3rd jersey
     ],
 
     datasets: [{
 
       data: [
-        12450,
-        10980,
-        8420
+        12450, //1st jersey
+        10980, //2nd jersey
+        8420 //3rd jersey
       ],
 
       backgroundColor: [
